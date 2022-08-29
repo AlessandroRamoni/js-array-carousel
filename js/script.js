@@ -1,5 +1,17 @@
 console.log("Lunedì");
 
+const images = ["01", "02", "03", "04", "05"];
+
+const container = document.querySelector(".carousel-container");
+
+for (let i = 0; i < images.length; i++) {
+  const image = images[i];
+  container.innerHTML += `<img class="immagini" src="./img/${image}.jpg" alt="due"></img>`;
+
+  const firstItem = document.querySelector(".immagini");
+  firstItem.classList.add("active");
+}
+
 const next = document.getElementById("next");
 const back = document.getElementById("back");
 
