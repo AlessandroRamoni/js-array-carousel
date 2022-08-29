@@ -3,3 +3,39 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+#carousel{
+    height: 70vh;
+    position: relative;
+}
+
+.immagini{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.immagini.active{
+    display: inline-block;
+}
+
+.comandi{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    top: 50%;
+}
+
+/* .bottoni{
+    align-self: center;
+} */
