@@ -6,17 +6,16 @@ const container = document.querySelector(".carousel-container");
 
 for (let i = 0; i < images.length; i++) {
   const image = images[i];
-  container.innerHTML += `<img class="immagini" src="./img/${image}.jpg" alt="due"></img>`;
-
-  const firstItem = document.querySelector(".immagini");
-  firstItem.classList.add("active");
+  container.innerHTML += `<img class="immagini" src="./img/${image}.jpg" alt="${image}"></img>`;
 }
+
+const firstItem = document.querySelector(".immagini");
+firstItem.classList.add("active");
 
 const next = document.getElementById("next");
 const back = document.getElementById("back");
 
 next.addEventListener("click", function () {
-  console.log("mi hai cliccato");
   const activeItem = document.querySelector(".immagini.active");
   const nextElement = activeItem.nextElementSibling;
   if (nextElement) {
@@ -26,7 +25,6 @@ next.addEventListener("click", function () {
 });
 
 back.addEventListener("click", function () {
-  console.log("mi hai cliccato");
   const activeItem = document.querySelector(".immagini.active");
   const previousElement = activeItem.previousElementSibling;
   if (previousElement) {
