@@ -12,3 +12,13 @@ next.addEventListener("click", function () {
     nextElement.classList.add("active");
   }
 });
+
+back.addEventListener("click", function () {
+  console.log("mi hai cliccato");
+  const activeItem = document.querySelector(".immagini.active");
+  const previousElement = activeItem.previousElementSibling;
+  if (previousElement) {
+    activeItem.classList.remove("active");
+    previousElement.classList.add("active");
+  }
+});
