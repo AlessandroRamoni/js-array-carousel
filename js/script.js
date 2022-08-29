@@ -6,9 +6,9 @@ const back = document.getElementById("back");
 next.addEventListener("click", function () {
   console.log("mi hai cliccato");
   const activeItem = document.querySelector(".immagini.active");
-  const nextElemet = activeItem.nextElementSibling;
-  if (nextElemet) {
+  const nextElement = activeItem.nextElementSibling;
+  if (nextElement) {
     activeItem.classList.remove("active");
-    nextElemet.classList.add("active");
+    nextElement.classList.add("active");
   }
 });
