@@ -1,6 +1,7 @@
 console.log("Lunedì");
 
 const images = ["01", "02", "03", "04", "05"];
+const activeIndex = 0;
 
 const container = document.querySelector(".carousel-container");
 
